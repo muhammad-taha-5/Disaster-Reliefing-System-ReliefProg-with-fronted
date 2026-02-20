@@ -1,0 +1,47 @@
+
+========== DAILY REPORT ==========
+Disaster Type: General
+Total Victims Registered: 3
+Families Helped: 3
+Medical Emergencies: 3
+Remaining Stock:
+  - car: 7
+  - panadol: 45
+==================================
+
+
+========== DAILY REPORT ==========
+Disaster Type: General
+Total Victims Registered: 1
+Families Helped: 1
+Medical Emergencies: 0
+Remaining Stock:
+  - 7000: 53988
+==================================
+
+
+========== DAILY REPORT ==========
+Disaster Type: General
+Total Victims Registered: 2
+Families Helped: 2
+Medical Emergencies: 0
+Remaining Stock:
+  - 7000: 53964
+  - rice: 34
+  - floor: 700000
+  - calpol: 5000
+==================================
+
+
+========== DAILY REPORT ==========
+Disaster Type: General
+Total Victims Registered: 2
+Families Helped: 1
+Medical Emergencies: 0
+Remaining Stock:
+  - 7000: 53988
+  - rice: 50
+  - floor: 700000
+  - calpol: 5000
+==================================
+

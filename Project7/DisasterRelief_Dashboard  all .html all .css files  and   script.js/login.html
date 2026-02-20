@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReliefPro | Login</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .login-container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: radial-gradient(circle at center, #1e293b 0%, #020617 100%);
+        }
+
+        .login-card {
+            width: 450px;
+            background: var(--sidebar-bg);
+            backdrop-filter: blur(30px);
+            border: 1px solid var(--glass-border);
+            border-radius: 30px;
+            padding: 50px;
+            text-align: center;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+        }
+
+        .login-card h2 {
+            font-family: 'Outfit';
+            font-size: 2.2rem;
+            margin-bottom: 30px;
+        }
+
+        .login-card h2 span {
+            color: var(--primary);
+        }
+
+        .input-box {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .input-box label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .input-box input {
+            width: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid var(--glass-border);
+            padding: 14px;
+            border-radius: 12px;
+            color: white;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        .input-box input:focus {
+            border-color: var(--primary);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="login-card">
+            <h2>Relief<span>Pro</span></h2>
+            <p style="color: var(--text-muted); margin-bottom: 40px;">Disaster Management Portal Console</p>
+
+            <div class="input-box">
+                <label>Admin ID</label>
+                <input type="text" placeholder="Enter operator ID">
+            </div>
+            <div class="input-box">
+                <label>Auth Password</label>
+                <input type="password" placeholder="••••••••">
+            </div>
+
+            <button class="btn-premium" style="width: 100%; margin-top: 20px;"
+                onclick="location.href='index.html'">Authorize Access</button>
+            <p style="margin-top: 20px; font-size: 0.8rem; color: var(--text-muted);">Secure Symmetric-Key Encrypted
+                Session</p>
+        </div>
+    </div>
+</body>
+
+</html>

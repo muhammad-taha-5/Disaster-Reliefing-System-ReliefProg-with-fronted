@@ -1,0 +1,4 @@
+﻿  3rd project .cpp
+C:\Users\Taha\source\repos\Project7\3rd project .cpp(1343,25): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Taha\source\repos\Project7\3rd project .cpp(1349,29): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  Project7.vcxproj -> C:\Users\Taha\source\repos\Project7\x64\Debug\Project7.exe

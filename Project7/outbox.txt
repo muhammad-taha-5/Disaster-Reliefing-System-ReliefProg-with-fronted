@@ -1,0 +1,3 @@
+TYPE: SMS/Email | TO: 03013877548 | MSG: High Rainfall Alert in Region A | STATUS: DELIVERED
+TYPE: SMS/Email | TO: 03013877543 | MSG: kindly dangouure aa gaya ha a weare  hogaee  ? | STATUS: DELIVERED
+TYPE: SMS/Email | TO: 03076455787 | MSG: denger kindky   be aware | STATUS: DELIVERED

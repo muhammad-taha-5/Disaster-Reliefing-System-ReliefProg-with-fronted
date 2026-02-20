@@ -1,0 +1,41 @@
+===== AUTOMATED HAZARD PREDICTION REPORT =====
+Region: Karachi
+Risk: LOW (0)
+Prediction: Flood Alert
+-----------------------------
+Region: Quetta
+Risk: HIGH (40)
+Prediction: Earthquake Warning!
+-----------------------------
+Region: Lahore
+Risk: HIGH (55)
+Prediction: Severe Flooding Imminent
+-----------------------------
+Region: Peshawar
+Risk: LOW (0)
+Prediction: Normal Conditions
+-----------------------------
+Region: Islamabad
+Risk: LOW (0)
+Prediction: Normal Conditions
+-----------------------------
+Region: Multan
+Risk: MODERATE (20)
+Prediction: Heatwave Warning
+-----------------------------
+Region: Gilgit
+Risk: LOW (0)
+Prediction: Normal Conditions
+-----------------------------
+Region: Gwadar
+Risk: HIGH (40)
+Prediction: Earthquake Warning!
+-----------------------------
+Region: Sialkot
+Risk: HIGH (55)
+Prediction: Flood Alert
+-----------------------------
+Region: Murree
+Risk: HIGH (30)
+Prediction: Flood Alert
+-----------------------------
