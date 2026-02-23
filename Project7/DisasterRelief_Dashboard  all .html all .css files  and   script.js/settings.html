@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReliefPro | System Settings</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR NAVIGATION -->
+    <aside class="sidebar">
+        <div class="sidebar-logo">Relief<span>Pro</span></div>
+        <ul class="nav-links">
+            <li class="nav-item"><a href="index.html" class="nav-link"><i class="fas fa-th-large"></i> Dashboard</a>
+            </li>
+            <li class="nav-item"><a href="victims.html" class="nav-link"><i class="fas fa-users"></i> Victims</a></li>
+            <li class="nav-item"><a href="inventory.html" class="nav-link"><i class="fas fa-boxes"></i> Inventory</a>
+            </li>
+            <li class="nav-item"><a href="allocation.html" class="nav-link"><i class="fas fa-microchip"></i> AI
+                    Allocation</a></li>
+            <li class="nav-item"><a href="reports.html" class="nav-link"><i class="fas fa-chart-line"></i> Analytics</a>
+            </li>
+            <li class="nav-item"><a href="settings.html" class="nav-link active"><i class="fas fa-cog"></i> Settings</a>
+            </li>
+        </ul>
+        <div class="user-block" style="padding: 20px; border-top: 1px solid var(--glass-border);">
+            <div style="font-weight: 600; font-size: 0.9rem;">Taha Admin</div>
+            <div style="font-size: 0.75rem; color: var(--text-muted);">Sector Alpha</div>
+        </div>
+    </aside>
+
+    <!-- MAIN DASHBOARD CONTENT -->
+    <main class="main-area">
+        <div class="header-top">
+            <h1 style="font-family: 'Outfit'; font-size: 2.2rem;">System Configuration</h1>
+            <div class="top-actions">
+                <button class="btn-premium" onclick="saveSettings()"><i class="fas fa-save"></i> Save Changes</button>
+            </div>
+        </div>
+
+        <section class="charts-grid" style="grid-template-columns: 1fr 1fr; margin-top: 30px;">
+            <!-- ACCOUNT SETTINGS -->
+            <div class="chart-container" style="padding: 30px;">
+                <h3 style="margin-bottom: 25px;"><i class="fas fa-user-circle"
+                        style="color: var(--primary); margin-right: 10px;"></i> Admin Profile</h3>
+                <div style="display: flex; flex-direction: column; gap: 20px;">
+                    <div>
+                        <label
+                            style="display: block; color: var(--text-muted); font-size: 0.85rem; margin-bottom: 8px;">Admin
+                            Name</label>
+                        <input type="text" class="input-field" value="Taha Admin" style="margin-bottom: 0;">
+                    </div>
+                    <div>
+                        <label
+                            style="display: block; color: var(--text-muted); font-size: 0.85rem; margin-bottom: 8px;">Operational
+                            Sector</label>
+                        <select class="input-field" style="margin-bottom: 0;">
+                            <option selected>Sector Alpha (Headquarters)</option>
+                            <option>Sector Bravo</option>
+                            <option>Sector Charlie</option>
+                            <option>Sector Delta</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label
+                            style="display: block; color: var(--text-muted); font-size: 0.85rem; margin-bottom: 8px;">Official
+                            Email</label>
+                        <input type="email" class="input-field" value="admin@reliefpro.gov" style="margin-bottom: 0;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECURITY SETTINGS -->
+            <div class="chart-container" style="padding: 30px;">
+                <h3 style="margin-bottom: 25px;"><i class="fas fa-shield-alt"
+                        style="color: var(--danger); margin-right: 10px;"></i> Advanced Security</h3>
+                <div style="display: flex; flex-direction: column; gap: 20px;">
+                    <div>
+                        <label
+                            style="display: block; color: var(--text-muted); font-size: 0.85rem; margin-bottom: 8px;">Change
+                            Password</label>
+                        <input type="password" class="input-field" placeholder="Enter new password"
+                            style="margin-bottom: 0;">
+                    </div>
+                    <div style="display: flex; gap: 10px; align-items: center; margin-top: 10px;">
+                        <input type="checkbox" id="twoFactor" checked
+                            style="width: 20px; height: 20px; accent-color: var(--primary);">
+                        <label for="twoFactor" style="color: var(--text-muted); font-size: 0.9rem;">Enable Two-Factor
+                            Authentication</label>
+                    </div>
+                    <div style="display: flex; gap: 10px; align-items: center;">
+                        <input type="checkbox" id="auditLog" checked
+                            style="width: 20px; height: 20px; accent-color: var(--primary);">
+                        <label for="auditLog" style="color: var(--text-muted); font-size: 0.9rem;">Auto-Save Audit Logs
+                            to Server</label>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="charts-grid" style="grid-template-columns: 2fr 1fr; margin-top: 30px;">
+            <!-- SYSTEM PREFERENCES -->
+            <div class="chart-container" style="padding: 30px;">
+                <h3 style="margin-bottom: 25px;"><i class="fas fa-tools"
+                        style="color: var(--warning); margin-right: 10px;"></i> Operational Preferences</h3>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+                    <div>
+                        <label
+                            style="display: block; color: var(--text-muted); font-size: 0.85rem; margin-bottom: 8px;">Default
+                            Disaster Scoring</label>
+                        <select class="input-field" style="margin-bottom: 0;">
+                            <option selected>Weighted (Aggressive)</option>
+                            <option>Linear (Standard)</option>
+                            <option>Conservative (Safe)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label
+                            style="display: block; color: var(--text-muted); font-size: 0.85rem; margin-bottom: 8px;">Data
+                            Refresh Rate</label>
+                        <select class="input-field" style="margin-bottom: 0;">
+                            <option>Every 1 Minute</option>
+                            <option selected>Every 5 Minutes</option>
+                            <option>Every 15 Minutes</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label
+                            style="display: block; color: var(--text-muted); font-size: 0.85rem; margin-bottom: 8px;">System
+                            Language</label>
+                        <select class="input-field" style="margin-bottom: 0;">
+                            <option selected>English (Default)</option>
+                            <option>Urdu (Standard)</option>
+                            <option>Spanish (ES)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label
+                            style="display: block; color: var(--text-muted); font-size: 0.85rem; margin-bottom: 8px;">Notification
+                            Sound</label>
+                        <select class="input-field" style="margin-bottom: 0;">
+                            <option selected>Emergency Siren (Soft)</option>
+                            <option>Standard Ping</option>
+                            <option>Muted</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SYSTEM BACKUP -->
+            <div class="chart-container" style="padding: 30px; border-color: var(--success);">
+                <h3 style="margin-bottom: 20px;"><i class="fas fa-cloud-upload-alt"
+                        style="color: var(--success); margin-right: 10px;"></i> Records Backup</h3>
+                <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.5; margin-bottom: 25px;">Export
+                    all encrypted logs and victim data to a secure cloud-mirrored backup.</p>
+                <div style="display: flex; flex-direction: column; gap: 15px;">
+                    <button class="btn-premium"
+                        style="background: rgba(16, 185, 129, 0.1); border: 1px solid var(--success); color: var(--success);">
+                        <i class="fas fa-download"></i> Daily Backup Export
+                    </button>
+                    <button class="btn-premium" style="background: rgba(255, 255, 255, 0.05);">
+                        <i class="fas fa-history"></i> Restore Point
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function saveSettings() {
+            alert("Settings synchronized successfully with ReliefPro Central Server.");
+        }
+    </script>
+</body>
+
+</html>
